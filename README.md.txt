@@ -1,50 +1,28 @@
-# Elevate Labs – SQL Developer Internship Task 1
-## Database Setup and Schema Design
+# Elevate Labs – SQL Developer Internship Task 2
+## Data Insertion and Handling Nulls (Telangana Examples)
 
 ### Objective
-The goal of this task is to create a well-structured database schema using SQL. This includes designing tables, defining primary and foreign keys, and understanding relationships between entities.
+Practice inserting, updating, and deleting data in SQL while handling NULL values and maintaining database consistency.
 
-### Domain
-Library Management System
+### SQL Operations
+1. Insert rows into tables using `INSERT INTO`  
+2. Handle missing values with `NULL`  
+3. Update rows using `UPDATE` with `WHERE`  
+4. Delete rows using `DELETE` with `WHERE`
 
-### Entities
-1. **Authors**
-   - author_id (Primary Key)
-   - name
-   - country
-2. **Books**
-   - book_id (Primary Key)
-   - title
-   - author_id (Foreign Key)
-   - published_year
-   - genre
-3. **Students**
-   - student_id (Primary Key)
-   - name
-   - email
-   - department
-4. **Borrow_Records**
-   - borrow_id (Primary Key)
-   - book_id (Foreign Key)
-   - student_id (Foreign Key)
-   - borrow_date
-   - return_date
-
-### Relationships
-- One author can write multiple books (1:M)
-- One book can be borrowed multiple times (1:M)
-- One student can borrow multiple books (1:M)
-
-### SQL Script
-The SQL script `schema.sql` includes all the commands to create the database and tables with proper constraints (primary and foreign keys).
+### Example Highlights
+- Inserted authors, students, books, and borrow records using Telangana-specific examples  
+- Authors: K. Chandrashekar Rao, P. V. Narasimha Rao, S. S. Rajamouli  
+- Books: Telangana History, Indian Politics, Epic Movies  
+- Handled NULL values for student email and borrow return date  
+- Updated student email and deleted specific borrow records  
 
 ### Tools Used
-- MySQL Workbench
-- VS Code / Notepad for editing SQL files
+- MySQL Workbench / SQLiteStudio / DB Fiddle
 
 ### Outcome
-- A normalized database schema
-- Tables with primary and foreign keys
+- Populated database with Telangana-specific data  
+- Hands-on experience with DML operations and null handling
 
 ### Submission
-All files including `schema.sql` and `README.md` are included in this repository for submission.
+All files including `task2.sql` and `README.md` are included in this repository for submission.
